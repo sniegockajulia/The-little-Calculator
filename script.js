@@ -543,7 +543,7 @@ document.addEventListener('keydown', function (event) {
     // Check if Shift key is held for symbols like ^, !, and |
     if (event.shiftKey) {
         switch (event.key) {
-            case '6': // Shift + 6 = ^ for square
+            case '^': // Shift + 6 = ^ for square
                 document.getElementById('square-btn').click();
                 break;
             case '\\': // Shift + \ (backslash) for square root
