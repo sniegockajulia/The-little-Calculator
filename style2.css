@@ -259,7 +259,7 @@ input[type="text"]:focus {
     }
 
     button {
-        width: 100%; /* Make buttons full width */
+        width: 50px; /* Make buttons full width */
         height: 50px; /* Adjust button height */
         font-size: 14px; /* Reduce font size */
     }
