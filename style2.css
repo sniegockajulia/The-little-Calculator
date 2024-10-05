@@ -283,4 +283,9 @@ input[type="text"]:focus {
         width: 80%; /* Make popup narrower */
         padding: 15px; /* Adjust padding */
     }
+  
+    .box1 {
+      flex-direction: column;
+    }
+  
 }
