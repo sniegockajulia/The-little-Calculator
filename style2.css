@@ -125,7 +125,7 @@ input[type="text"]:focus {
 .shortcuts-container {
     display: none; /* Initially hidden */
     position: absolute; /* Positioning to not affect layout */
-    top: 130px; /* Center vertically */
+    top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
     border: 2px solid #dcdcdc; /* Light grey border */
@@ -313,6 +313,12 @@ input[type="text"]:focus {
     height: 50px; /* Smaller height for buttons */
     font-size: 16px; /* Adjust font size */
   }
+  
+  #toggle-shortcuts-button {
+    width: 30px; /* Button width */
+    height: 30px; /* Button height */
+    font-size: 20px; /* Font size for the question mark */
+}
 
   .box1 {
     flex-direction: column; /* Stack boxes vertically on mobile */
