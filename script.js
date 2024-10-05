@@ -577,9 +577,11 @@ document.addEventListener('keydown', function (event) {
                 document.getElementById('clear-input').click();
                 break;
             case 'i': // Pressing + triggers addition
+                event.preventDefault();
                 document.getElementById('number-input').focus();
                 break;
             case 'e': // Pressing e triggers exponent input
+                event.preventDefault();
                 document.getElementById('exponent-input').focus();
                 break;
             default:
