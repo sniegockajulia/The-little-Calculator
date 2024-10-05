@@ -235,52 +235,64 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 768px) {
-    .calculator {
-        width: 90%; /* Adjust width for mobile */
-        padding: 10px; /* Reduce padding */
-    }
+  body {
+    margin-top: 20px;
+  }
 
-    h1 {
-        font-size: 28px; /* Reduce font size for the title */
-    }
+  h1 {
+    font-size: 28px; /* Adjusted font size for smaller screens */
+    margin-top: 20px;
+  }
 
-    h2 {
-        font-size: 12px; /* Reduce font size for section headings */
-    }
+  h2 {
+    font-size: 12px; /* Smaller font size for section headings */
+  }
 
-    input[type="text"],
-    #exponent-input {
-        width: 100%; /* Make input fields full width */
-        font-size: 14px; /* Reduce font size */
-    }
+  .calculator {
+    width: 90%; /* Full width for smaller screens */
+    padding: 10px;
+  }
 
-    button {
-        width: 100%; /* Make buttons full width */
-        height: 50px; /* Adjust button height */
-        font-size: 14px; /* Reduce font size */
-    }
+  input,
+  #exponent-input {
+    width: 100%; /* Full width for input fields */
+    font-size: 14px; /* Adjusted font size for inputs */
+  }
 
-    .button-section {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: stretch; /* Stretch buttons to full width */
-    }
+  button {
+    width: 100%; /* Full width buttons */
+    height: 60px; /* Reduced height for buttons */
+    font-size: 16px; /* Adjusted font size for buttons */
+  }
 
-    .button-container1,
-    .button-container3,
-    .csv-button-container {
-        flex-direction: column; /* Stack buttons vertically */
-        width: 100%; /* Make containers full width */
-    }
+  .button-container1,
+  .button-container3 {
+    grid-template-columns: repeat(3, 1fr); /* More buttons in a row on smaller screens */
+  }
 
-    .button-container1 button,
-    .button-container3 button {
-        width: 100%; /* Make buttons full width */
-        height: 50px; /* Adjust button height */
-        margin-bottom: 10px; /* Add margin between buttons */
-    }
+  .info-container {
+    flex-direction: column; /* Stack info container vertically */
+    width: 100%; /* Full width for info container */
+  }
 
-    #remove-popup {
-        width: 80%; /* Make popup narrower */
-        padding: 15px; /* Adjust padding */
-    }
+  #info {
+    width: 100%; /* Full width for info box */
+    font-size: 14px; /* Smaller font size for info */
+  }
+
+  .loading {
+    width: 20px; /* Smaller loading spinner */
+    height: 20px; /* Smaller loading spinner */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Further reduce font size for small screens */
+  }
+
+  button {
+    height: 50px; /* Further reduced button height */
+    font-size: 14px; /* Further reduced font size for buttons */
+  }
 }
