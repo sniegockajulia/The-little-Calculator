@@ -545,7 +545,7 @@ document.addEventListener('keydown', function (event) {
         switch (event.key) {
             case '^': // Shift + 6 = ^ for square
                 event.preventDefault();
-                document.getElementById('square-btn').click();
+                document.getElementById('exponentiation').click();
                 break;
             case '#': //  \ (backslash) for square root
                 document.getElementById('square-root').click();
@@ -576,7 +576,14 @@ document.addEventListener('keydown', function (event) {
             case 'Escape': // Pressing Escape clears the input
                 document.getElementById('clear-input').click();
                 break;
+            case 'i': // Pressing + triggers addition
+                document.getElementById('number-input').focus();
+                break;
+            case 'e': // Pressing e triggers exponent input
+                document.getElementById('exponent-input').focus();
+                break;
             default:
+                
                 break;
         }
     }
