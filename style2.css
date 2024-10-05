@@ -2,6 +2,9 @@
     .calculator {
         width: 90%; /* Adjust width for mobile */
         padding: 10px; /* Reduce padding */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Stretch buttons to full width */
+        
     }
 
     h1 {
