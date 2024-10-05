@@ -113,8 +113,8 @@ input[type="text"]:focus {
     color: white; /* Text color */
     border: none;
     border-radius: 80%; /* Make it round */
-    width: 500px !important; /* Button width */
-    height: 500px !important; /* Button height */
+    width: 30px; /* Button width */
+    height: 30px; /* Button height */
     font-size: 20px; /* Font size for the question mark */
     cursor: pointer; /* Change cursor on hover */
     position: fixed;
