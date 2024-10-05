@@ -540,32 +540,41 @@ document.getElementById('clear-input').addEventListener('click', function() {
 document.addEventListener('keydown', function (event) {
     const numberInput = document.getElementById('number-input');
 
-    switch (event.key) {
-        case '^': // Example: pressing 1 triggers the square operation
-            document.getElementById('square-btn').click();
-            break;
-        case '\': // Example: pressing triggers the square root operation
-            document.getElementById('square-root').click();
-            break;
-        case '|': // Example: pressing triggers the modulo operation
-            document.getElementById('modulo').click();
-            break;
-        case '!': // Example: pressing triggers the modulo operation
-            document.getElementById('factorial').click();
-            break;
-        case '+': // Pressing + triggers addition
-            document.getElementById('addition').click();
-            break;
-        case '*': // Pressing * triggers multiplication
-            document.getElementById('multiplication').click();
-            break;
-        case 'Enter': // Pressing Enter triggers equal
-            document.getElementById('equal').click();
-            break;
-        case 'Escape': // Pressing Escape clears the input
-            document.getElementById('clear-input').click();
-            break;
-        default:
-            break;
+    // Check if Shift key is held for symbols like ^, !, and |
+    if (event.shiftKey) {
+        switch (event.key) {
+            case '6': // Shift + 6 = ^ for square
+                document.getElementById('square-btn').click();
+                break;
+            case '\\': // Shift + \ (backslash) for square root
+                document.getElementById('square-root').click();
+                break;
+            case '1': // Shift + 1 = ! for factorial
+                document.getElementById('factorial').click();
+                break;
+            case '|': // Shift + \ (pipe symbol) for modulo
+                document.getElementById('modulo').click();
+                break;
+            default:
+                break;
+        }
+    } else {
+        // Normal non-shifted keypresses
+        switch (event.key) {
+            case '+': // Pressing + triggers addition
+                document.getElementById('addition').click();
+                break;
+            case '*': // Pressing * triggers multiplication
+                document.getElementById('multiplication').click();
+                break;
+            case 'Enter': // Pressing Enter triggers equal
+                document.getElementById('equal').click();
+                break;
+            case 'Escape': // Pressing Escape clears the input
+                document.getElementById('clear-input').click();
+                break;
+            default:
+                break;
+        }
     }
 });
