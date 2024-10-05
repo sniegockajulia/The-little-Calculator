@@ -264,10 +264,13 @@ input[type="text"]:focus {
   .box1 {
     flex-direction: column; /* Stack boxes vertically on mobile */
   }
+  
+  .box11-content {
+    flex-direction: column; 
+  }
 
-  .button-container1,
-  .button-container3 {
-    grid-template-columns: 1fr; /* Single column layout for buttons */
+  button-container {
+    flex-direction: column; 
   }
 
   #info {
