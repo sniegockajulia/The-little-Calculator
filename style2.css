@@ -235,7 +235,7 @@ input[type="text"]:focus {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .calculator {
     width: 90%; /* Adjust width for mobile */
     padding: 10px; /* Adjust padding for mobile */
