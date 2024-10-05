@@ -269,7 +269,7 @@ input[type="text"]:focus {
     flex-direction: column; 
   }
 
-  button-container {
+  .button-container {
     flex-direction: column; 
   }
 
