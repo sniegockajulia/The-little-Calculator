@@ -565,6 +565,10 @@ document.addEventListener('keydown', function (event) {
                 event.preventDefault();
                 document.getElementById('modulo').click();
                 break;
+            case '?': // ? to open info box
+                event.preventDefault();
+                document.getElementById('toggle-shortcuts-button').click();
+                break;
             default:
                 break;
         }
