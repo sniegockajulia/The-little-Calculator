@@ -1,0 +1,59 @@
+<body>
+    <h1>The Little Calculator</h1>
+    <div class="spinner"></div>
+    <br>
+
+    <div class="calculator">
+        <input type="text" id="number-input" placeholder="Enter a number or CSV" />
+
+        <div class="info-container">
+            <h2 id="info" class="big" title="Info about the number">Information about the number</h2>
+            <button id="download-log">Download <br> Error Log</button>
+        </div>
+        
+        <div class="button-section-description">
+            <h2>UNARY OPERATIONS</h2> 
+            <h2></h2> 
+            <h2>BINARY OPERATIONS</h2> 
+        </div>
+        
+        <div class="button-section">
+             
+            <div class="button-container1">
+                <button id="square-btn">x<sup>2</sup></button>
+                <button id="square-root">&radic;<span>x</span></button>
+                <button id="modulo">|x|</button>
+                <button id="factorial">x!</button>
+            </div>
+
+            <div class="button-container2">
+                <input type="text" id="exponent-input" placeholder="Enter exponent" />
+                <button id="exponentiation">x<sup>y</sup></button>
+            </div>
+            
+            <div class="button-container3">
+                <button id="addition">+</button>
+                <button id="multiplication">*</button>
+                <button id="equal">=</button>
+                <button id="clear-input">Clear</button>
+            </div>
+        </div>
+        
+        <h2>CSV OPERATIONS</h2>
+        <div class="csv-button-container">
+            <button id="sum">Sum</button>
+            <button id="sort">Sort</button>
+            <button id="reverse">Reverse</button>
+            <button id="remove-element">Remove Specific Element</button>
+            <button id="average">Average</button>
+        </div>
+
+        <div id="remove-popup" style="display:none;">
+            <label for="remove-index">Enter index of element to remove (1-based):</label>
+            <input type="number" id="remove-index" min="1">
+            <button id="confirm-remove">Confirm</button>
+            <button id="cancel-remove">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
