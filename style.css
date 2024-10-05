@@ -113,6 +113,8 @@ input[type="text"]:focus {
     color: white; /* Text color */
     border: none;
     border-radius: 80%; /* Make it round */
+    border: 2px solid white; 
+    background-color: transparent;
     width: 30px; /* Button width */
     height: 30px; /* Button height */
     font-size: 20px; /* Font size for the question mark */
@@ -121,10 +123,6 @@ input[type="text"]:focus {
     top: 10px;
     right: 10px;
     z-index: 1000;
-    display: flex; /* Enables flexbox */
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
-    text-align: center; /* Centers text in case of multiline text */
 }
 
 .shortcuts-container {
