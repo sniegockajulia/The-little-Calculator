@@ -234,53 +234,49 @@ input[type="text"]:focus {
   }
 }
 
-@media (max-width: 768px) {
-    .calculator {
-        width: 90%; /* Adjust width for mobile */
-        padding: 10px; /* Reduce padding */
-    }
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .calculator {
+    width: 90%; /* Adjust width for mobile */
+    padding: 10px; /* Adjust padding for mobile */
+  }
 
-    h1 {
-        font-size: 28px; /* Reduce font size for the title */
-    }
+  h1 {
+    font-size: 28px; /* Decrease font size for mobile */
+  }
 
-    h2 {
-        font-size: 12px; /* Reduce font size for section headings */
-    }
+  h2 {
+    font-size: 14px; /* Decrease heading size for mobile */
+  }
 
-    input[type="text"],
-    #exponent-input {
-        width: 100%; /* Make input fields full width */
-        font-size: 14px; /* Reduce font size */
-    }
+  input[type="text"],
+  #exponent-input {
+    width: 100%; /* Full width for inputs */
+    font-size: 14px; /* Smaller font size for mobile */
+  }
 
-    button {
-        width: 100%; /* Make buttons full width */
-        height: 50px; /* Adjust button height */
-        font-size: 14px; /* Reduce font size */
-    }
+  button {
+    width: 100%; /* Full width buttons for better accessibility */
+    height: 50px; /* Smaller height for buttons */
+    font-size: 16px; /* Adjust font size */
+  }
 
-    .button-section {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: stretch; /* Stretch buttons to full width */
-    }
+  .box1 {
+    flex-direction: column; /* Stack boxes vertically on mobile */
+  }
 
-    .button-container1,
-    .button-container3,
-    .csv-button-container {
-        flex-direction: column; /* Stack buttons vertically */
-        width: 100%; /* Make containers full width */
-    }
+  .button-container1,
+  .button-container3 {
+    grid-template-columns: 1fr; /* Single column layout for buttons */
+  }
 
-    .button-container1 button,
-    .button-container3 button {
-        width: 100%; /* Make buttons full width */
-        height: 50px; /* Adjust button height */
-        margin-bottom: 10px; /* Add margin between buttons */
-    }
+  #info {
+    width: 100%; /* Full width for info box */
+    font-size: 15px; /* Adjust font size for info box */
+  }
 
-    #remove-popup {
-        width: 80%; /* Make popup narrower */
-        padding: 15px; /* Adjust padding */
-    }
+  .loading {
+    width: 20px; /* Smaller loading spinner */
+    height: 20px;
+  }
 }
