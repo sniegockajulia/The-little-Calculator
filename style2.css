@@ -248,18 +248,14 @@ input[type="text"]:focus {
         font-size: 12px; /* Reduce font size for section headings */
     }
 
-    .number-input {
-        width: 30%;
-    }
-
     input[type="text"],
     #exponent-input {
         width: 100%; /* Make input fields full width */
-        font-size: 12px; /* Reduce font size */
+        font-size: 14px; /* Reduce font size */
     }
 
     button {
-        width: 50px; /* Make buttons full width */
+        width: 100%; /* Make buttons full width */
         height: 50px; /* Adjust button height */
         font-size: 14px; /* Reduce font size */
     }
@@ -287,9 +283,4 @@ input[type="text"]:focus {
         width: 80%; /* Make popup narrower */
         padding: 15px; /* Adjust padding */
     }
-  
-    .box1 {
-      flex-direction: column;
-    }
-  
 }
