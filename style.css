@@ -110,7 +110,6 @@ input[type="text"]:focus {
 }
 
 #toggle-shortcuts-button {
-    background-color: #FF5722; /* Accent color */
     color: white; /* Text color */
     border: none;
     border-radius: 80%; /* Make it round */
@@ -314,7 +313,6 @@ input[type="text"]:focus {
   }
 
   #toggle-shortcuts-button {
-    background-color: #FF5722; /* Accent color */
     color: white; /* Text color */
     border: none;
     border-radius: 80%; /* Make it round */
