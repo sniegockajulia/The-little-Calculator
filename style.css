@@ -109,7 +109,7 @@ input[type="text"]:focus {
   justify-content: center;
 }
 
-#toggle-shortcuts-button {
+.title-box #toggle-shortcuts-button {
     all: unset;
     color: white; /* Text color */
     border: none;
