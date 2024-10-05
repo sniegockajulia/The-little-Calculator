@@ -125,7 +125,7 @@ input[type="text"]:focus {
 .shortcuts-container {
     display: none; /* Initially hidden */
     position: absolute; /* Positioning to not affect layout */
-    top: 50%; /* Center vertically */
+    top: 10%; /* Center vertically */
     left: 50%; /* Center horizontally */
     background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
     border: 2px solid #dcdcdc; /* Light grey border */
@@ -313,11 +313,18 @@ input[type="text"]:focus {
     height: 50px; /* Smaller height for buttons */
     font-size: 16px; /* Adjust font size */
   }
-  
+
   #toggle-shortcuts-button {
+    background-color: #FF5722; /* Accent color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Make it round */
     width: 30px; /* Button width */
     height: 30px; /* Button height */
     font-size: 20px; /* Font size for the question mark */
+    cursor: pointer; /* Change cursor on hover */
+    outline: none; /* Remove outline */
+    position: relative; /* For absolute positioning of tooltip */
 }
 
   .box1 {
