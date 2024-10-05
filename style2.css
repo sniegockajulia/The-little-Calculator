@@ -278,7 +278,7 @@ input[type="text"]:focus {
 
     .button-container1 button,
     .button-container3 button {
-        width: 50%; /* Make buttons full width */
+        width: 50px; /* Make buttons full width */
         height: 50px; /* Adjust button height */
         margin-bottom: 10px; /* Add margin between buttons */
     }
