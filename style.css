@@ -316,22 +316,6 @@ input[type="text"]:focus {
     font-size: 16px; /* Adjust font size */
   }
 
-  
-  #toggle-shortcuts-button {
-    all: unset; 
-    color: white; /* Text color */
-    border: none;
-    border-radius: 80%; /* Make it round */
-    width: 30px; /* Button width */
-    height: 30px; /* Button height */
-    font-size: 20px; /* Font size for the question mark */
-    cursor: pointer; /* Change cursor on hover */
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-  }
-
   .box1 {
     flex-direction: column; /* Stack boxes vertically on mobile */
   }
