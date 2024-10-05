@@ -248,6 +248,10 @@ input[type="text"]:focus {
         font-size: 12px; /* Reduce font size for section headings */
     }
 
+    .number-input {
+        width: 90%;
+    }
+
     input[type="text"],
     #exponent-input {
         width: 100%; /* Make input fields full width */
