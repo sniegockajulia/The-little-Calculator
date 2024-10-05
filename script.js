@@ -558,18 +558,6 @@ document.addEventListener('keydown', function (event) {
                 event.preventDefault();
                 document.getElementById('modulo').click();
                 break;
-            case 'd': // Shift + D to enter delete element field
-                event.preventDefault();
-                document.getElementById('remove-index').focus();
-                break;
-            case 'y': // Shift + Y to delete element
-                event.preventDefault();
-                document.getElementById('confirm-remove').click();
-                break;
-            case 'n': // Shift + N to cancel delete element
-                event.preventDefault();
-                document.getElementById('cancel-remove').click();
-                break;
             default:
                 break;
         }
@@ -619,6 +607,14 @@ document.addEventListener('keydown', function (event) {
             case 'a': // Pressing a calculates an average of list elements
                 event.preventDefault();
                 document.getElementById('average').click();
+                break;
+            case 'y': // Y to delete element
+                event.preventDefault();
+                document.getElementById('confirm-remove').click();
+                break;
+            case 'n': // N to cancel delete element
+                event.preventDefault();
+                document.getElementById('cancel-remove').click();
                 break;
             default:
                 
