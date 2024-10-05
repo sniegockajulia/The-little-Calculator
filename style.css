@@ -317,7 +317,7 @@ input[type="text"]:focus {
   #toggle-shortcuts-button {
     background-color: #FF5722; /* Accent color */
     color: white; /* Text color */
-    border-color: white; /* Remove default border */
+    border: 2px solid white; 
     border-radius: 50%; /* Make it round */
     width: 30px; /* Button width */
     height: 30px; /* Button height */
