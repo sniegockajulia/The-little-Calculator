@@ -537,6 +537,13 @@ document.getElementById('clear-input').addEventListener('click', function() {
     document.getElementById('exponent-input').value = ''; 
 });
 
+const shortcutsContainer = document.querySelector('.shortcuts-container');
+const toggleShortcutsButton = document.getElementById('toggle-shortcuts-button'); // Assuming you have a button with this ID
+
+toggleShortcutsButton.addEventListener('click', () => {
+    shortcutsContainer.style.display = shortcutsContainer.style.display === 'none' ? 'block' : 'none';
+});
+
 document.addEventListener('keydown', function (event) {
     const numberInput = document.getElementById('number-input');
 
