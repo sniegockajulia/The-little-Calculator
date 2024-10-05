@@ -576,9 +576,11 @@ document.addEventListener('keydown', function (event) {
         // Normal non-shifted keypresses
         switch (event.key) {
             case '+': // Pressing + triggers addition
+                event.preventDefault();
                 document.getElementById('addition').click();
                 break;
             case '*': // Pressing * triggers multiplication
+                event.preventDefault();
                 document.getElementById('multiplication').click();
                 break;
             case 'Enter': // Pressing Enter triggers equal
@@ -587,7 +589,7 @@ document.addEventListener('keydown', function (event) {
             case 'Escape': // Pressing Escape clears the input
                 document.getElementById('clear-input').click();
                 break;
-            case 'i': // Pressing + triggers addition
+            case 'i': // Pressing i triggers input
                 event.preventDefault();
                 document.getElementById('number-input').focus();
                 break;
