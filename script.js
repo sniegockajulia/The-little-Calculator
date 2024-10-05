@@ -544,7 +544,7 @@ document.addEventListener('keydown', function (event) {
     if (event.shiftKey) {
         switch (event.key) {
             case '^': // Shift + 6 = ^ for square
-                document.getElementById("number-input").value = '';
+                event.preventDefault()
                 document.getElementById('square-btn').click();
                 break;
             case '\\': // Shift + \ (backslash) for square root
