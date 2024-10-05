@@ -541,8 +541,17 @@ document.addEventListener('keydown', function (event) {
     const numberInput = document.getElementById('number-input');
 
     switch (event.key) {
-        case '1': // Example: pressing 1 triggers the square operation
+        case '^': // Example: pressing 1 triggers the square operation
             document.getElementById('square-btn').click();
+            break;
+        case '\': // Example: pressing triggers the square root operation
+            document.getElementById('square-root').click();
+            break;
+        case '|': // Example: pressing triggers the modulo operation
+            document.getElementById('modulo').click();
+            break;
+        case '!': // Example: pressing triggers the modulo operation
+            document.getElementById('factorial').click();
             break;
         case '+': // Pressing + triggers addition
             document.getElementById('addition').click();
