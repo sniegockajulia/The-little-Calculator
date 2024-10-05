@@ -125,8 +125,8 @@ input[type="text"]:focus {
 .shortcuts-container {
     display: none; /* Initially hidden */
     position: absolute; /* Positioning to not affect layout */
-    top: 40%; /* Center vertically */
-    left: 60%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
     background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
     border: 2px solid #dcdcdc; /* Light grey border */
     border-radius: 8px;
