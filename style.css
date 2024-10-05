@@ -1,0 +1,231 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #121212; /* Dark background for contrast */
+  background-image: linear-gradient(
+    45deg,
+    #121212,
+    #2c2c2f
+  ); /* Subtle gradient */
+}
+
+h1 {
+  font-size: 36px; /* Increased font size for prominence */
+  color: #ffffff; /* White text for contrast */
+  margin: 50px 0 0; /* Increase top margin for more space above */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+  letter-spacing: 2px; /* Increased letter spacing for readability */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Consistent font family */
+}
+
+h2 {
+    font-size: 15px; /* Font size for section headings */
+    color: #ffffff; /* White color for contrast */
+    margin: 10px 0; /* Space above and below the headings */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent input */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+button {
+  width: 130px;
+  height: 70px;
+  background: linear-gradient(
+    45deg,
+    #555,
+    #333
+  ); /* Dark grey gradient for button */
+  color: white; /* White text */
+  border: none;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.3s; /* Added transition for shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for buttons */
+}
+
+button:focus,
+button:hover {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #444, #222); /* Darker gradient on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+input[type="text"] {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly more opaque input background */
+}
+
+input[type="text"]:focus {
+  border-color: #b0b0b0; /* Grey on focus */
+  outline: none;
+}
+
+.big {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #ffffff; /* White text for headers */
+}
+
+.calculator {
+  width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 47, 0.9),
+    rgba(20, 20, 30, 0.9)
+  ); /* Gradient for calculator */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow for calculator container */
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#info {
+  display: flex;
+  width: 473px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 5px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Light transparent background */
+  color: #2c2c2f; /* Dark text */
+  font-size: 17px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for info box */
+}
+
+.button-section-description {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 120px;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.button-container1,
+.button-container3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: rgba(30, 30, 47, 0.8); /* Darker transparent background */
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for button containers */
+}
+
+.button-container1 button,
+.button-container3 button {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; /* Round buttons */
+  font-size: 16px;
+}
+
+#exponent-input {
+  width: 130px;
+  height: 25px;
+  text-align: center;
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent input */
+}
+
+.button-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  justify-content: center;
+  background-color: rgba(30, 30, 47, 0.8); /* Darker transparent background */
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#exponentiation {
+  width: 100px;
+  height: 30px;
+}
+
+.csv-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(30, 30, 47, 0.8); /* Darker transparent background */
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#remove-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+}
+
+.loading {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #dcdcdc; /* Light grey loading spinner */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
