@@ -559,12 +559,15 @@ document.addEventListener('keydown', function (event) {
                 document.getElementById('modulo').click();
                 break;
             case 'd': // Shift + D to enter delete element field
+                event.preventDefault();
                 document.getElementById('remove-index').focus();
                 break;
             case 'y': // Shift + Y to delete element
+                event.preventDefault();
                 document.getElementById('confirm-remove').click();
                 break;
             case 'n': // Shift + N to cancel delete element
+                event.preventDefault();
                 document.getElementById('cancel-remove').click();
                 break;
             default:
