@@ -547,13 +547,12 @@ document.addEventListener('keydown', function (event) {
                 event.preventDefault()
                 document.getElementById('square-btn').click();
                 break;
-            case '\\': // Shift + \ (backslash) for square root
-                document.getElementById('square-root').click();
-                break;
-            case '1': // Shift + 1 = ! for factorial
+            case '!': // Shift + 1 = ! for factorial
+                event.preventDefault()
                 document.getElementById('factorial').click();
                 break;
             case '|': // Shift + \ (pipe symbol) for modulo
+                event.preventDefault()
                 document.getElementById('modulo').click();
                 break;
             default:
@@ -573,6 +572,9 @@ document.addEventListener('keydown', function (event) {
                 break;
             case 'Escape': // Pressing Escape clears the input
                 document.getElementById('clear-input').click();
+                break;
+            case '\': //  \ (backslash) for square root
+                document.getElementById('square-root').click();
                 break;
             default:
                 break;
