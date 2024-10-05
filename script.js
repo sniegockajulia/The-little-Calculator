@@ -558,6 +558,15 @@ document.addEventListener('keydown', function (event) {
                 event.preventDefault();
                 document.getElementById('modulo').click();
                 break;
+            case 'd': // Shift + D to enter delete element field
+                document.getElementById('remove-index').focus();
+                break;
+            case 'y': // Shift + Y to delete element
+                document.getElementById('confirm-remove').click();
+                break;
+            case 'n': // Shift + N to cancel delete element
+                document.getElementById('cancel-remove').click();
+                break;
             default:
                 break;
         }
@@ -583,6 +592,30 @@ document.addEventListener('keydown', function (event) {
             case 'e': // Pressing e triggers exponent input
                 event.preventDefault();
                 document.getElementById('exponent-input').focus();
+                break;
+            case 'l': // Pressing l triggers log download
+                event.preventDefault();
+                document.getElementById('download-log').click();
+                break;
+            case 's': // Pressing s sorts list elements
+                event.preventDefault();
+                document.getElementById('sum').click();
+                break;
+            case 'o': // Pressing o sums list elements
+                event.preventDefault();
+                document.getElementById('sort').click();
+                break;
+            case 'r': // Pressing r reverses list elements
+                event.preventDefault();
+                document.getElementById('reverse').click();
+                break;
+            case 'd': // Pressing d deletes list elements
+                event.preventDefault();
+                document.getElementById('remove-element').click();
+                break;
+            case 'a': // Pressing a calculates an average of list elements
+                event.preventDefault();
+                document.getElementById('average').click();
                 break;
             default:
                 
