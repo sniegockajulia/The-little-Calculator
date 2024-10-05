@@ -323,7 +323,6 @@ input[type="text"]:focus {
     height: 30px; /* Button height */
     font-size: 20px; /* Font size for the question mark */
     cursor: pointer; /* Change cursor on hover */
-    outline: none; /* Remove outline */
     position: relative; /* For absolute positioning of tooltip */
 }
 
