@@ -247,6 +247,7 @@ input[type="text"]:focus {
   justify-content: center;
   gap: 10px;
   background-color: rgba(30, 30, 47, 0.8); /* Darker transparent background */
+  border-radius: 8px;
   padding: 5px;
   margin-top: 20px;
 }
