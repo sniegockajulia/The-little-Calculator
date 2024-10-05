@@ -115,6 +115,8 @@ input[type="text"]:focus {
     border-radius: 80%; /* Make it round */
     width: 30px; /* Button width */
     height: 30px; /* Button height */
+    max-width: 30px; /* Prevents stretching */
+    max-height: 30px; /* Prevents stretching */
     font-size: 20px; /* Font size for the question mark */
     cursor: pointer; /* Change cursor on hover */
     position: fixed;
