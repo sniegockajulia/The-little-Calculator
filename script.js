@@ -536,3 +536,27 @@ document.getElementById('clear-input').addEventListener('click', function() {
     document.getElementById('info').innerText = 'Information about the number'; // Reset info field
     document.getElementById('exponent-input').value = ''; 
 });
+
+document.addEventListener('keydown', function (event) {
+    const numberInput = document.getElementById('number-input');
+
+    switch (event.key) {
+        case '1': // Example: pressing 1 triggers the square operation
+            document.getElementById('square-btn').click();
+            break;
+        case '+': // Pressing + triggers addition
+            document.getElementById('addition').click();
+            break;
+        case '*': // Pressing * triggers multiplication
+            document.getElementById('multiplication').click();
+            break;
+        case 'Enter': // Pressing Enter triggers equal
+            document.getElementById('equal').click();
+            break;
+        case 'Escape': // Pressing Escape clears the input
+            document.getElementById('clear-input').click();
+            break;
+        default:
+            break;
+    }
+});
