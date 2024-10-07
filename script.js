@@ -555,6 +555,7 @@ document.addEventListener('keydown', function (event) {
                 document.getElementById('exponentiation').click();
                 break;
             case '#': //  \ (backslash) for square root
+                event.preventDefault();
                 document.getElementById('square-root').click();
                 break;
             case '!': // Shift + 1 = ! for factorial
