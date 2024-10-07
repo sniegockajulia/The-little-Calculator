@@ -584,7 +584,7 @@ document.addEventListener('keydown', function (event) {
                 event.preventDefault();
                 document.getElementById('multiplication').click();
                 break;
-            case 'Enter': // Pressing Enter triggers equal
+            case '=': // Pressing Enter triggers equal
                 document.getElementById('equal').click();
                 break;
             case 'Escape': // Pressing Escape clears the input
