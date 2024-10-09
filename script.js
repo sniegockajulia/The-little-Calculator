@@ -78,7 +78,7 @@ const handleInvalidInput = (validationResult) => {
     } else if (validationResult.isIncompleteCSV) {
         showError("Error: Input CSV is incomplete. Please enter a valid CSV list.");
     } else {
-        showError("Error: Invalid input. Please enter a number or a valid CSV list.");
+        showError("Error: Invalid characters in the input field. Only numbers from 0 to 9 and numbers seperated by comas are allowed.");
         document.getElementById("number-input").value = "";
     }
 };
