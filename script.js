@@ -299,7 +299,7 @@ const setOperator = (op) => {
     }
     firstNumber = parseFloat(input);
     operator = op;
-    document.getElementById("info").innerHTML = "HEY";
+    document.getElementById("info").innerHTML = "Information about the number";
     document.getElementById("number-input").value = ""; // Clear input for next number
     document.getElementById("number-input").focus(); // Focus on the input field for new number
 };
