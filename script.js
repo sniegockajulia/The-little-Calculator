@@ -106,8 +106,6 @@ const squareNumber = () => {
 
     const result = parseFloat(input) ** 2;
 
-    waitFiveSeconds()
-
     // Display result in the input field
     document.getElementById("number-input").value = result;
 
@@ -365,13 +363,15 @@ const sum = () => {
 // Function to sort values from CSV input
 const sortCSV = () => {
     showLoading();
+    waitFiveSeconds()
     const input = document.getElementById("number-input").value;
     const validationResult = validate(input);
     
     if (!validationResult.isValid) {
         handleInvalidInput(validationResult);
-        hideLoading();
         return;
+
+    hideLoading();
     }
 
     const values = input.split(',').map(Number).sort((a, b) => a - b); // Sort values
