@@ -83,12 +83,6 @@ const handleInvalidInput = (validationResult) => {
     }
 };
 
-
-function waitFiveSeconds() {
-    setTimeout(function() {
-    }, 5000); // 5000 milliseconds = 5 seconds
-}
-
 // Function to square the number
 const squareNumber = () => {
     const input = document.getElementById("number-input").value;
@@ -363,7 +357,6 @@ const sum = () => {
 // Function to sort values from CSV input
 const sortCSV = () => {
     showLoading();
-    waitFiveSeconds();
     const input = document.getElementById("number-input").value;
     const validationResult = validate(input);
     
