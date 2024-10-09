@@ -297,11 +297,11 @@ const setOperator = (op) => {
         showError(`Error: Cannot set ${op} operator on CSV input.`);
         return;
     }
-    document.getElementById("info").value = "";
     firstNumber = parseFloat(input);
     operator = op;
     document.getElementById("number-input").value = ""; // Clear input for next number
     document.getElementById("number-input").focus(); // Focus on the input field for new number
+    document.getElementById("info").value = "";
 };
 
 // Function to calculate the result of the binary operation
