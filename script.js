@@ -299,9 +299,9 @@ const setOperator = (op) => {
     }
     firstNumber = parseFloat(input);
     operator = op;
+    document.getElementById("info").value = "HEY";
     document.getElementById("number-input").value = ""; // Clear input for next number
     document.getElementById("number-input").focus(); // Focus on the input field for new number
-    document.getElementById("info").value = "";
 };
 
 // Function to calculate the result of the binary operation
