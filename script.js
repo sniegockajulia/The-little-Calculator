@@ -83,6 +83,12 @@ const handleInvalidInput = (validationResult) => {
     }
 };
 
+
+function waitFiveSeconds() {
+    setTimeout(function() {
+    }, 5000); // 5000 milliseconds = 5 seconds
+}
+
 // Function to square the number
 const squareNumber = () => {
     const input = document.getElementById("number-input").value;
@@ -99,6 +105,8 @@ const squareNumber = () => {
     }
 
     const result = parseFloat(input) ** 2;
+
+    waitFiveSeconds()
 
     // Display result in the input field
     document.getElementById("number-input").value = result;
