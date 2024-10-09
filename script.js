@@ -363,15 +363,16 @@ const sum = () => {
 // Function to sort values from CSV input
 const sortCSV = () => {
     showLoading();
-    waitFiveSeconds()
+    waitFiveSeconds();
     const input = document.getElementById("number-input").value;
     const validationResult = validate(input);
     
     if (!validationResult.isValid) {
         handleInvalidInput(validationResult);
+        hideLoading();
         return;
 
-    hideLoading();
+    
     }
 
     const values = input.split(',').map(Number).sort((a, b) => a - b); // Sort values
