@@ -5,7 +5,7 @@ Link to view the website:
 https://htmlpreview.github.io/?https://raw.githubusercontent.com/sniegockajulia/The-little-Calculator/refs/heads/main/index.html
 
 Functionalities:
-1 - Enhanced informative field
+1 - Enhanced informative field and clear button
 2 - Expanded unary operations (square, square root, modulo, factorial, exponentiation)
 3 - Binary operations (addition, multiplication)
 4 - Expanded CSV operations (sum, sort, reverse, average, remove elements) and CSV validation
